@@ -1,0 +1,15 @@
+{
+  "name": "projeto-2---site-pessoal",
+  "version": "1.0.0",
+  "description": "Site pessoal ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LuanCalais",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
