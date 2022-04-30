@@ -1,10 +1,14 @@
-body{
+body {
 
-    font-family: 'Roboto', sans-serif!important;
+    font-family: 'Roboto', sans-serif !important;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
 
-    nav{
+    nav {
 
-        h1 span{
+        h1 span {
             margin-left: 1rem;
             font-size: 2rem;
             letter-spacing: 0.3rem;
@@ -13,13 +17,62 @@ body{
             font-weight: 400;
         }
 
-        i{
+        i {
             font-size: 2rem;
             padding: 10px;
-            background-color: #F1CB8D;
+            background-color: #000000;
             border-radius: 200px;
             vertical-align: middle;
-            color: #000;  
+            color: rgb(255, 255, 255);
         }
+
+        .lateral {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .perfis {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
     }
+
+    header {
+        height: 100vh;
+        width: 100%;
+
+        .left-header{
+
+            height: 70vh;
+
+            .titulo-lateral{
+                margin: 60px;
+            }
+    
+            .formulario-cad {
+                margin-left: 50px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .ilustracao {
+            margin: 50px;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 400px;
+            }
+
+        }
+
+    }
+
 }
