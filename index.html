@@ -2,130 +2,175 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icone Icon -->
-    <link rel="icon" href="assets/img/ilustracoes/logo-img.png">
-    <!-- Estilo -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
-    <!-- Box Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <title>Site Owl</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icone Icon -->
+  <link rel="icon" href="assets/img/ilustracoes/logo-img.png">
+  <!-- Estilo -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
+  <!-- Box Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <title>Site Owl</title>
 </head>
 
 <body>
-    <nav class="container">
+  <nav class="container">
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="mt-4"> <i class='bx bx-code-alt'></i> <span>Owl.io</span></h1>
+      </div>
+
+      <div class="col-lg-6">
 
         <div class="row">
-            <div class="col-lg-6">
-                <h1 class="mt-4"> <i class='bx bx-code-alt'></i> <span>Owl.io</span></h1>
+
+          <div class="col-lg-8">
+
+            <div class="lateral">
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
             </div>
 
-            <div class="col-lg-6">
+          </div>
 
+          <div class="col-lg-4 perfis">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-perfil">
+                  <li><img src="assets/img/perfis/p1.jpg" class="img1" alt=""></li>
+                  <li><img src="assets/img/perfis/p2.jpg" class="img2" alt=""> </li>
+                  <li><img src="assets/img/perfis/p3.jpg" class="img3" alt=""></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6">
+                <ul class="review-list">
+                  <li>
+                    <i class='bx bxs-star review first-list-review'></i>
+                  </li>
+
+
+                  <li>
+                    <i class='bx bxs-star review'></i>
+                  </li>
+
+
+                  <li>
+                    <i class='bx bxs-star review'></i>
+                  </li>
+
+
+                  <li>
+                    <i class='bx bxs-star review'></i>
+                  </li>
+
+
+                  <li>
+                    <i class='bx bxs-star-half review'></i>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <header class="container">
+    <div class="row">
+
+      <div class="col-lg-6">
+
+        <div class="left-header">
+          <div class="titulo-lateral">
+            <h4>Bem vindo de volta!</h4>
+          </div>
+
+          <div class="formulario-cad">
+            <form>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <fieldset class="form-group">
                 <div class="row">
-
-                    <div class="col-lg-8" >
-
-                        <div class="lateral">
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                        </div>
-
+                  <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check disabled">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
+                        disabled>
+                      <label class="form-check-label" for="gridRadios3">
+                        Third disabled radio
+                      </label>
                     </div>
-
-                    <div class="col-lg-4 perfis" >
-                        fotos e avaliações
-                    </div>
-
+                  </div>
                 </div>
-
-            </div>
-
+              </fieldset>
+              <div class="form-group row">
+                <div class="col-sm-2">Checkbox</div>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      Example checkbox
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-block btn-dark">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
 
-    </nav>
 
-    <header class="container">
-        <div class="row">
+      </div>
 
-            <div class="col-lg-6">
+      <div class="col-lg-6">
 
-                <div class="left-header">
-                    <div class="titulo-lateral">    
-                        <h4>Bem vindo de volta!</h4>
-                </div>
-
-                <div class="formulario-cad">
-                    <form>
-                        <div class="form-group row">
-                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                          <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                          </div>
-                        </div>
-                        <fieldset class="form-group">
-                          <div class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                            <div class="col-sm-10">
-                              <div class="form-check disabled">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                                <label class="form-check-label" for="gridRadios3">
-                                  Third disabled radio
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </fieldset>
-                        <div class="form-group row">
-                          <div class="col-sm-2">Checkbox</div>
-                          <div class="col-sm-10">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" id="gridCheck1">
-                              <label class="form-check-label" for="gridCheck1">
-                                Example checkbox
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-sm-10">
-                            <button type="submit" class="btn btn-block btn-dark">Sign in</button>
-                          </div>
-                        </div>
-                      </form>
-                </div>
-                </div>
-
-  
-            </div>
-
-            <div class="col-lg-6">
-
-                <div class="ilustracao">
-                    <img src="assets/img/ilustracoes/Ilustracao-Inicio.png  " alt="">
-                </div>
-
-            </div>
-
+        <div class="ilustracao">
+          <img src="assets/img/ilustracoes/Ilustracao-Inicio.png  " alt="">
         </div>
-    </header>
+
+      </div>
+
+    </div>
+  </header>
 
 
-    <script src="assets/lib/jquery/jquery.min.js"></script>
-    <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+  <script src="assets/lib/jquery/jquery.min.js"></script>
+  <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 </body>
 
 </html>

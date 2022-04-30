@@ -27,6 +27,8 @@ body nav i {
 body nav .lateral {
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 body nav .perfis {
@@ -41,6 +43,67 @@ body nav .perfis {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+body nav .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav .row ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: -3.8vw;
+}
+
+body nav .row ul li {
+  list-style: none;
+}
+
+body nav .row ul li img {
+  width: 50px;
+  margin: 3px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+}
+
+body nav .row ul li .img1 {
+  z-index: 9;
+}
+
+body nav .row ul li .img2 {
+  z-index: 99;
+  margin-left: -25px;
+}
+
+body nav .row ul li .img3 {
+  z-index: 999;
+  margin-left: -30px;
+}
+
+body nav .row ul li .first-list-review {
+  margin-left: 20px !important;
+}
+
+body nav .row ul li .review {
+  background-color: #00B67A !important;
+  padding: 3px !important;
+  border-radius: 2px;
+  margin: 2px;
+  margin-left: 0px;
+  padding: 0px;
+  background-color: #fff;
+  font-size: 0.5rem;
+  color: #fff;
 }
 
 body header {
