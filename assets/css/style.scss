@@ -1,13 +1,24 @@
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #292923;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+}
+
 body {
 
     font-family: 'Roboto', sans-serif !important;
     width: 100%;
     height: 100vh;
     margin: 0px;
-    padding: 0px;   
+    padding: 0px;
     background-color: #00B67A;
 
-    i{
+    i {
         vertical-align: middle;
     }
 
@@ -82,13 +93,13 @@ body {
                         margin-left: -30px;
                     }
 
-                    .first-list-review{
-                        margin-left: 20px!important;
+                    .first-list-review {
+                        margin-left: 20px !important;
                     }
 
                     .review {
-                        background-color: #00B67A!important;
-                        padding: 3px!important;
+                        background-color: #00B67A !important;
+                        padding: 3px !important;
                         border-radius: 2px;
                         margin: 2px;
                         margin-left: 0px;
@@ -117,12 +128,12 @@ body {
             .titulo-lateral {
                 margin: 60px;
 
-                h4{
+                h4 {
                     font-weight: 900;
                     font-size: 1.7rem;
                 }
 
-                h5{
+                h5 {
                     font-weight: 500;
                     color: #919191;
                     font-size: 1.1rem;
@@ -133,40 +144,40 @@ body {
             .formulario-cad {
                 margin-left: 50px;
 
-                .form-group{
+                .form-group {
                     padding: 5px;
                     width: 40vw;
 
-                    label{
+                    label {
                         font-weight: 900;
                         font-size: 0.9rem;
                     }
 
-                    input{
+                    input {
                         background-color: #eeeeee;
                         border-radius: 0px;
                     }
 
-                    .botao-logar{
+                    .botao-logar {
 
-                        button{
+                        button {
                             margin-top: 20px;
                             width: 30.9vw;
                             font-weight: 500;
                             border-radius: 0px;
 
-                            i{
+                            i {
                                 font-size: 1.5rem;
                             }
                         }
                     }
 
-                    .forgot-password{
+                    .forgot-password {
                         color: #919191;
                         margin-top: 20px;
                         font-size: 0.9rem;
 
-                        a{
+                        a {
                             color: #000000;
                             font-weight: 700;
                             text-decoration: none;
@@ -190,6 +201,90 @@ body {
                 width: 400px;
             }
 
+        }
+
+    }
+
+    section {
+        width: 100%;
+        height: 120vh;
+        background: #141414;
+
+        .conteudo-central {
+            border-top: 7px solid #000;
+            margin: 10px;
+            height: 100%;
+            background: #fff;
+
+            .box-text {
+                height: 50vh;
+                vertical-align: middle;
+            }
+
+            .box-text-h5 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 20%;
+
+                h5 {
+                    font-family: 'Bebas Neue', cursive;
+                    font-weight: 900;
+                    font-size: 3rem;
+                }
+            }
+
+            .box-text-p {
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .area-1 {
+                img {
+                    width: 240px;
+                }
+            }
+
+            .area-2 {
+                img {
+                    width: 200px;
+                    height: 300px;
+                }
+
+                .box-text-h5 {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                p {
+                    text-align: end;
+
+                    span {
+                        display: block;
+                        font-weight: 900;
+                        font-style: italic;
+                    }
+                }
+            }
+
+        }
+    }
+
+    footer {
+
+        .copyright-box {
+
+            display: flex;
+            justify-content: flex-end;
+
+            .bxs-heart {
+                margin-left: 5px;
+                margin-right: 5px;
+                font-size: 1.5rem;
+                color: rgb(238, 34, 68);
+            }
         }
 
     }
