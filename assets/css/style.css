@@ -206,19 +206,19 @@ body header .ilustracao img {
 
 body section {
   width: 100%;
-  height: 120vh;
+  height: auto;
   background: #141414;
 }
 
 body section .conteudo-central {
   border-top: 7px solid #000;
   margin: 10px;
-  height: 100%;
+  height: auto;
   background: #fff;
 }
 
 body section .conteudo-central .box-text {
-  height: 50vh;
+  height: auto;
   vertical-align: middle;
 }
 
