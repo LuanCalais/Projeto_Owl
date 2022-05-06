@@ -145,12 +145,16 @@ body header .left-header .titulo-lateral h5 {
 }
 
 body header .left-header .formulario-cad {
-  margin-left: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  border-radius: 0px 10px 10px 0px;
+  -webkit-box-shadow: -10px 6px 0px 1px #000000;
+  box-shadow: -10px 6px 0px 1px #000000;
+  margin-left: auto;
 }
 
 body header .left-header .formulario-cad .form-group {
+  margin: 8px;
   padding: 5px;
-  width: 40vw;
 }
 
 body header .left-header .formulario-cad .form-group label {
@@ -165,7 +169,7 @@ body header .left-header .formulario-cad .form-group input {
 
 body header .left-header .formulario-cad .form-group .botao-logar button {
   margin-top: 20px;
-  width: 30.9vw;
+  width: 100%;
   font-weight: 500;
   border-radius: 0px;
 }
