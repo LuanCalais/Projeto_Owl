@@ -217,6 +217,7 @@ body section {
 body section .conteudo-central {
   border-top: 7px solid #000;
   margin: 10px;
+  margin-bottom: 0px;
   height: auto;
   background: #fff;
 }
@@ -287,7 +288,7 @@ body section .conteudo-central .area-2 .img-section {
 }
 
 body #sessaoFinal {
-  height: 30vh;
+  height: auto;
   background-color: #141414 !important;
 }
 
