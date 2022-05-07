@@ -270,6 +270,11 @@ body {
                         font-style: italic;
                     }
                 }
+
+                .img-section{
+                    display: flex!important;
+                    justify-content: flex-end!important;
+                }
             }
 
         }
@@ -356,6 +361,12 @@ body {
             }
         }
 
+    }
+
+    @media (max-width: 991px){
+        .img-section img{
+            display: none!important;
+        }
     }
 
 }
