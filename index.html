@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="myApp">
 
 <head>
   <meta charset="UTF-8">
@@ -20,7 +20,7 @@
   <title>Site Owl</title>
 </head>
 
-<body class="scrollbar">
+<body class="scrollbar" ng-controller="homeCtrl">
   <nav class="container">
 
     <div class="row">
@@ -111,23 +111,35 @@
           </div>
 
           <div class="formulario-cad">
-            <form>
+            <form name="form.log">
               <div class="form-group row">
-                <label for="inputEmail3" class=" col-form-label">Nome</label>
+                <label for="inputEmail3" class=" col-form-label">E-mail</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputPassword" placeholder="seu@email.com">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="fulano@email.com"
+                    ng-model="usuario.email" ng-required="true">
+
+                  <div ng-show="form.log.email.$error.required && form.log.email.$dirty" class="err-msg">
+                    - Atenção! O campo "E-mail" é obrigatório >:(
+                  </div>
+
                 </div>
               </div>
               <div class="form-group row">
-                <label for="inputPassword3" class=" col-form-label">Senha</label>
+                <label for="inputPassword3" class="col-form-label">Senha</label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3" placeholder="********">
+                  <input type="password" class="form-control" name="senha" id="senha" placeholder="********"
+                    ng-model="usuario.senha" ng-required="true">
+
+                  <div ng-show="form.log.senha.$error.required && form.log.senha.$dirty" class="err-msg">
+                    - Atenção! O campo "Senha" é obrigatório >:(
+                  </div>
+
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="botao-logar">
-                  <button type="submit" class="btn btn-block btn-outline-dark">Logar <i
+                  <button type="submit" class="btn btn-block btn-outline-dark" ng-disabled="form.log.$invalid">Logar <i
                       class='bx bx-right-arrow-alt'></i></button>
                 </div>
               </div>
@@ -251,10 +263,13 @@
           target="_blank" role="button"><i class='bx bxl-instagram'></i></a>
 
         <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/luan-s-calais-186104217/?originalSubdomain=br" target="_blank" role="button"><i class='bx bxl-linkedin'></i></a>
+        <a class="btn btn-outline-light btn-floating m-1"
+          href="https://www.linkedin.com/in/luan-s-calais-186104217/?originalSubdomain=br" target="_blank"
+          role="button"><i class='bx bxl-linkedin'></i></a>
 
         <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/LuanCalais?tab=repositories" target="_blank" role="button"><i class='bx bxl-github'></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/LuanCalais?tab=repositories"
+          target="_blank" role="button"><i class='bx bxl-github'></i></a>
       </div>
       <!-- Section: Social media -->
     </div>
@@ -269,12 +284,21 @@
   </footer>
 
 
+  <!-- JQuery -->
   <script src="assets/lib/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
   <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
   <!-- Scroll Reveal -->
   <script src="assets/lib/scrollReveal/scrollreveal.min.js"></script>
   <!-- <script src="assets/js/main.js"></script> -->
-  <script src="assets/js/main.min.js"></script>
+  <script src="a  ssets/js/main.min.js"></script>
+  <!-- AngularJS -->
+  <script src="assets/lib/angular/angular.min.js"></script>
+  <!-- Modulo Principal -->
+  <script src="assets/js/angular/app.js"></script>
+  <!-- Controller Home -->
+  <script src="assets/js/angular/controller/homeCtrl.js"></script>
+  <!-- Box Icons -->
   <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 </body>
 

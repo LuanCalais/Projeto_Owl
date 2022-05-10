@@ -151,6 +151,15 @@ body {
                     margin: 8px;
                     padding: 5px;
 
+                    .err-msg{
+                        background-color: rgb(224, 71, 71);
+                        color: #fff;
+                        padding: 9px;
+                        border-radius: 10px;
+                        text-align: center;
+                        margin: 10px;
+                    }
+
                     label {
                         font-weight: 900;
                         font-size: 0.9rem;
