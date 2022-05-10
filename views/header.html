@@ -1,0 +1,72 @@
+
+  <header class="container">
+    <div class="row">
+
+      <div class="col-sm-12 col-lg-6">
+
+        <div class="left-header">
+          <div class="titulo-lateral">
+            <h4>Bem vindo de volta!</h4>
+            <h5>
+              Por favor entre com seu login
+            </h5>
+
+          </div>
+
+          <div class="formulario-cad">
+            <form name="form.log">
+              <div class="form-group row">
+                <label for="inputEmail3" class=" col-form-label">E-mail</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="fulano@email.com"
+                    ng-model="usuario.email" ng-required="true">
+
+                  <div ng-show="form.log.email.$error.required && form.log.email.$dirty" class="err-msg">
+                    - Atenção! O campo "E-mail" é obrigatório >:(
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword3" class="col-form-label">Senha</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" name="senha" id="senha" placeholder="********"
+                    ng-model="usuario.senha" ng-required="true">
+
+                  <div ng-show="form.log.senha.$error.required && form.log.senha.$dirty" class="err-msg">
+                    - Atenção! O campo "Senha" é obrigatório >:(
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="botao-logar">
+                  <button type="submit" class="btn btn-block btn-outline-dark" ng-disabled="form.log.$invalid">Logar <i
+                      class='bx bx-right-arrow-alt'></i></button>
+                </div>
+              </div>
+
+
+              <div class="form-group row">
+                <div class="forgot-password">
+                  Esqueceu sua senha? Clique <a href="#">aqui</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-sm-12 col-lg-6 d-none d-md-none d-lg-block">
+
+        <div class="ilustracao">
+          <img src="assets/img/ilustracoes/Ilustracao-Inicio.png  " class="img-fluid" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </header>

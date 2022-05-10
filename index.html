@@ -21,153 +21,14 @@
 </head>
 
 <body class="scrollbar" ng-controller="homeCtrl">
-  <nav class="container">
 
-    <div class="row">
-      <div class="col-sm-12 col-lg-6">
-        <h1 class="mt-4"> <i class='bx bx-code-alt'></i> <span>Owl.io</span></h1>
-      </div>
+  <!-- Nav Import -->
+  <div ng-include="'views/nav.html'"></div>
 
-      <div class="col-sm-12 col-lg-6">
+  <!-- Header Import -->
+  <div ng-include="'views/header.html'"></div>
 
-        <div class="row">
-
-          <div class="col-sm-12 col-lg-8">
-
-            <div class="lateral">
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 perfis">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-perfil">
-                  <li><img src="assets/img/perfis/p1.jpg" class="img1" alt=""></li>
-                  <li><img src="assets/img/perfis/p2.jpg" class="img2" alt=""> </li>
-                  <li><img src="assets/img/perfis/p3.jpg" class="img3" alt=""></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-6">
-                <ul class="review-list">
-                  <li>
-                    <i class='bx bxs-star review first-list-review'></i>
-                  </li>
-
-
-                  <li>
-                    <i class='bx bxs-star review'></i>
-                  </li>
-
-
-                  <li>
-                    <i class='bx bxs-star review'></i>
-                  </li>
-
-
-                  <li>
-                    <i class='bx bxs-star review'></i>
-                  </li>
-
-
-                  <li>
-                    <i class='bx bxs-star-half review'></i>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </nav>
-
-  <header class="container">
-    <div class="row">
-
-      <div class="col-sm-12 col-lg-6">
-
-        <div class="left-header">
-          <div class="titulo-lateral">
-            <h4>Bem vindo de volta!</h4>
-            <h5>
-              Por favor entre com seu login
-            </h5>
-
-          </div>
-
-          <div class="formulario-cad">
-            <form name="form.log">
-              <div class="form-group row">
-                <label for="inputEmail3" class=" col-form-label">E-mail</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="fulano@email.com"
-                    ng-model="usuario.email" ng-required="true">
-
-                  <div ng-show="form.log.email.$error.required && form.log.email.$dirty" class="err-msg">
-                    - Atenção! O campo "E-mail" é obrigatório >:(
-                  </div>
-
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-form-label">Senha</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" name="senha" id="senha" placeholder="********"
-                    ng-model="usuario.senha" ng-required="true">
-
-                  <div ng-show="form.log.senha.$error.required && form.log.senha.$dirty" class="err-msg">
-                    - Atenção! O campo "Senha" é obrigatório >:(
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="botao-logar">
-                  <button type="submit" class="btn btn-block btn-outline-dark" ng-disabled="form.log.$invalid">Logar <i
-                      class='bx bx-right-arrow-alt'></i></button>
-                </div>
-              </div>
-
-
-              <div class="form-group row">
-                <div class="forgot-password">
-                  Esqueceu sua senha? Clique <a href="#">aqui</a>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="col-sm-12 col-lg-6 d-none d-md-none d-lg-block">
-
-        <div class="ilustracao">
-          <img src="assets/img/ilustracoes/Ilustracao-Inicio.png  " class="img-fluid" alt="">
-        </div>
-
-      </div>
-
-    </div>
-  </header>
-
+  <!-- Sessão principal -->
   <section>
     <div class="conteudo-central">
       <div class="container mt-4">
@@ -236,6 +97,7 @@
     </div>
   </section>
 
+  <!-- Sessão final -->
   <section id="sessaoFinal">
 
     <article class="container">
@@ -249,41 +111,10 @@
 
   </section>
 
-  <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <div class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/luan.calais" role="button"
-          target="_blank"><i class='bx bxl-facebook'></i></a>
+  <!-- Footer -->
+  <div ng-include="'views/footer.html'"></div>
 
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/luan_calais/?hl=en"
-          target="_blank" role="button"><i class='bx bxl-instagram'></i></a>
-
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1"
-          href="https://www.linkedin.com/in/luan-s-calais-186104217/?originalSubdomain=br" target="_blank"
-          role="button"><i class='bx bxl-linkedin'></i></a>
-
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/LuanCalais?tab=repositories"
-          target="_blank" role="button"><i class='bx bxl-github'></i></a>
-      </div>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3 copyright-box" style="background-color: rgba(0, 0, 0, 0.2);">
-      Feito com <i class='bx bxs-heart'></i> por
-      <a class="text-white" href="https://mdbootstrap.com/">Luan_Calais</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-
-
+  <!-- Imports -->
   <!-- JQuery -->
   <script src="assets/lib/jquery/jquery.min.js"></script>
   <!-- Bootstrap -->
@@ -300,6 +131,7 @@
   <script src="assets/js/angular/controller/homeCtrl.js"></script>
   <!-- Box Icons -->
   <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+
 </body>
 
 </html>
