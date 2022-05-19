@@ -13,7 +13,7 @@
 
           </div>
 
-          <div class="formulario-cad">
+          <div class="formulario-cad" ng-controller="logarCtrl">
             <form name="form.log">
               <div class="form-group row">
                 <label for="inputEmail3" class=" col-form-label">E-mail</label>
@@ -42,7 +42,7 @@
 
               <div class="form-group row">
                 <div class="botao-logar">
-                  <button type="submit" class="btn btn-block btn-outline-dark" ng-disabled="form.log.$invalid">Logar <i
+                  <button type="submit" ng-click="getDados" class="btn btn-block btn-outline-dark" ng-disabled="form.log.$invalid">Logar <i
                       class='bx bx-right-arrow-alt'></i></button>
                 </div>
               </div>
@@ -50,7 +50,7 @@
 
               <div class="form-group row">
                 <div class="forgot-password">
-                  Esqueceu sua senha? Clique <a href="#">aqui</a>
+                  Não possui cadastro conosco? Clique <a href="#">aqui</a>
                 </div>
               </div>
             </form>
