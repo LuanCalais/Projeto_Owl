@@ -217,6 +217,41 @@ body header .ilustracao img {
   width: 400px;
 }
 
+body .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+body .modal-content .modal-body button span {
+  color: #fff;
+  font-size: 2rem;
+}
+
+body .modal-content .modal-body .container {
+  height: auto;
+}
+
+body .modal-content .left-header {
+  height: auto;
+  background-color: #fff;
+  width: 100%;
+}
+
+body .modal-content .left-header .formulario-cad {
+  border-radius: 0px;
+}
+
+body .modal-content .left-header .botao-cadastro button {
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 0px;
+}
+
+body .modal-content .left-header .botao-cadastro button i {
+  font-size: 1.5rem;
+}
+
 body section {
   width: 100%;
   height: auto;

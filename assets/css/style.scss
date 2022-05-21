@@ -151,7 +151,7 @@ body {
                     margin: 8px;
                     padding: 5px;
 
-                    .err-msg{
+                    .err-msg {
                         background-color: rgb(224, 71, 71);
                         color: #fff;
                         padding: 9px;
@@ -211,6 +211,52 @@ body {
 
             img {
                 width: 400px;
+            }
+
+        }
+
+    }
+
+
+    .modal-content {
+        background-color: transparent;
+        border: none;
+
+        .modal-body {
+            button {
+                span {
+                    color: #fff;
+                    font-size: 2rem;
+                }
+            }
+
+            .container {
+                height: auto;
+            }
+
+        }
+
+        .left-header {
+            height: auto;
+            background-color: #fff;
+            width: 100%;
+
+            .formulario-cad {
+                border-radius: 0px;
+            }
+
+            .botao-cadastro {
+
+                button {
+                    margin-top: 20px;
+                    width: 100%;
+                    font-weight: 500;
+                    border-radius: 0px;
+
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
             }
 
         }
@@ -281,9 +327,9 @@ body {
                     }
                 }
 
-                .img-section{
-                    display: flex!important;
-                    justify-content: flex-end!important;
+                .img-section {
+                    display: flex !important;
+                    justify-content: flex-end !important;
                 }
             }
 
@@ -372,9 +418,9 @@ body {
 
     }
 
-    @media (max-width: 991px){
-        .img-section img{
-            display: none!important;
+    @media (max-width: 991px) {
+        .img-section img {
+            display: none !important;
         }
     }
 
